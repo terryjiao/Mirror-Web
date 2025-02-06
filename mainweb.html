@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirror - Discover Yourself</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #88b7b0 0%, #435b6e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .content {
+            flex: 1;
+            color: white;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .logo-circle {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+        }
+
+        .logo-text {
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 72px;
+            font-weight: 400;
+            margin-bottom: 40px;
+            line-height: 1.1;
+        }
+
+        .store-buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .store-button {
+            background: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: black;
+        }
+
+        .phone-image {
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .phone-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .logo {
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 48px;
+            }
+
+            .store-buttons {
+                justify-content: center;
+            }
+
+            .phone-image {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <div class="logo">
+                <div class="logo-circle"></div>
+                <div class="logo-text">
+                    INSIGHTS. REFLECTION.<br>
+                    BALANCE. DAILY.
+                </div>
+            </div>
+            <h1>Discover<br>Yourself with<br>Mirror.</h1>
+            <div class="store-buttons">
+                <a href="#" class="store-button">
+                    <img src="/api/placeholder/24/24" alt="Google Play icon">
+                    Get it on<br>Google Play
+                </a>
+                <a href="#" class="store-button">
+                    <img src="/api/placeholder/24/24" alt="App Store icon">
+                    Get it on the<br>App Store
+                </a>
+            </div>
+        </div>
+        <div class="phone-image">
+            <!-- Replace the src attribute with the path to your phone image -->
+            <img src="mirror-phone-image.png" alt="Mirror App Interface">
+        </div>
+    </div>
+</body>
+</html>
